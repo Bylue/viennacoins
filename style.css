@@ -110,14 +110,6 @@ h1+p {
   transition: none;
 }
 
-.container--2 {
-  filter: hue-rotate(80deg) saturate(140%);
-}
-
-.container--3 {
-  filter: hue-rotate(160deg) saturate(140%);
-}
-
 .container p {
   color: hsla(0, 0%, 100%, .6);
   font-size: 2.2rem;

@@ -3,16 +3,11 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-    body {
-        font-family: 'Rubik', sans-serif;
-    }
-
-    .blurry-bg {
-        background: black;
-        background-size:cover;
-        background-repeat:no-repeat;
-    }
-
+  body {
+    background-image:url("./background.png") !important;
+    background-size:cover !important;
+    background-repeat:no-repeat !important;
+  }
     @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 
 
@@ -86,33 +81,44 @@ h1:after{
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIENNA Coins</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./golden_diamond.png">
 </head>
 <body class="blurry-bg">
-    <h1 title="VIENNA Coins">VIENNA Coins</h1>
+    <h1 style="background: black; padding:10px; border: 1px solid black;
+    border-radius: 40px;" title="VIENNA Coins">VIENNA Coins</h1>
 
     <section class="main">
 
-        <div class="wrap wrap--1">
-          <div class="container container--1">
-            <p>01. Normal</p>
+        <div class="wrap wrap--1" id="1">
+          <div style="background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url('./discord.png') !important; background-size:cover !important;" class="container container--1">
+            <p style="color:white;">discord.gg/mxWgUFs32k</p>
           </div>
         </div>
       
-        <div class="wrap wrap--2">
-          <div class="container container--2">
-            <p>02. Reverse</p>
+        <div class="wrap wrap--2" id="2">
+          <div style="background: url('./tiktok.png') !important; background-size:cover !important;" class="container container--2">
+            <p style="color:white;">tiktok.com/@viennacoins</p>
           </div>
         </div>
       
-        <div class="wrap wrap--3">
-          <div class="container container--3">
-            <p>03. Normal</p>
+        <div class="wrap wrap--3" id="3">
+          <div style="background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url('./hypixel.png') !important; background-size:cover !important;" class="container container--3">
+            <p>Hypixel.net</p>
           </div>
         </div>
       
       </section>
       
-      <a href="https://abubakersaeed.netlify.app/designs/d10-parallax-tilt-effect-cards" class="abs-site-link" rel="nofollow noreferrer" target="_blank">abs/designs/d10-parallax-tilt-effect-cards</a>
+
+
+
+
+
+
+
+
+
+      
       <script>
         class parallaxTiltEffect {
 
@@ -206,6 +212,24 @@ const wrap3 = new parallaxTiltEffect({
 element: $('.wrap--3'),
 tiltEffect: 'reverse'
 });
+      </script>
+      <script>
+
+        function redirect1() {
+            window.location.href = "https://discord.gg/mxWgUFs32k";
+        }
+        document.getElementById("1").addEventListener("click", redirect1);
+
+        function redirect2() {
+            window.location.href = "https://tiktok.com/@viennacoins";
+        }
+        document.getElementById("2").addEventListener("click", redirect2);
+
+        function redirect3() {
+            window.location.href = "https://hypixel.net";
+        }
+        document.getElementById("3").addEventListener("click", redirect3);
+
       </script>
 </body>
 </html>
