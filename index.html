@@ -229,6 +229,21 @@ tiltEffect: 'reverse'
             window.location.href = "https://hypixel.net";
         }
         document.getElementById("3").addEventListener("click", redirect3);
+          
+          // set the original title
+document.title = "VIENNA Coins";
+
+// add an event listener for when the user tabs out of the browser window
+window.addEventListener("blur", function() {
+  // change the title when the user tabs out
+  document.title = "Hey, come back!";
+});
+
+// add an event listener for when the user returns to the browser window
+window.addEventListener("focus", function() {
+  // change the title back to the original
+  document.title = "VIENNA Coins";
+});
 
       </script>
 </body>
